@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Jambo — Nkumba, Uganda</title>
+  <meta name="description"
+    content="Cafe Jambo in Nkumba — fresh Lake Victoria tilapia, chicken biryani, great coffee and cozy vibes. Dine in, takeaway, delivery, catering.">
+  <meta property="og:title" content="Cafe Jambo — Nkumba, Uganda">
+  <meta property="og:description" content="Fresh food, great coffee, cozy vibes in Nkumba.">
+  <meta property="og:type" content="restaurant.restaurant">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Cafe Jambo",
+  "address": {"@type": "PostalAddress", "addressLocality": "Nkumba", "addressCountry": "UG"},
+  "telephone": "+256752072346"
+}
+</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="antialiased">
+
+  <!-- Scroll progress -->
+  <div id="progress" class="fixed top-0 left-0 h-[3px] bg-[var(--gold)] z-[60]" style="width:0%"></div>
+
+  <!-- NAV -->
+  <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between py-5">
+      <a href="#home" class="serif text-2xl tracking-wide text-[var(--gold)]">Cafe <span
+          class="text-[var(--secondary)]">Jambo</span></a>
+      <nav class="hidden md:flex items-center gap-8 text-sm tracking-wide uppercase">
+        <a href="#about" class="hover:text-[var(--gold)] transition-colors">About</a>
+        <a href="#menu" class="hover:text-[var(--gold)] transition-colors">Menu</a>
+        <a href="#why" class="hover:text-[var(--gold)] transition-colors">Why Us</a>
+        <a href="#gallery" class="hover:text-[var(--gold)] transition-colors">Gallery</a>
+        <a href="#contact" class="hover:text-[var(--gold)] transition-colors">Contact</a>
+      </nav>
+      <a href="#reserve"
+        class="btn-ripple hidden md:inline-block bg-[var(--gold)] text-[var(--primary)] px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide hover:bg-white transition-colors">Reserve
+        Table</a>
+      <button id="menuBtn" aria-label="Open menu" class="md:hidden text-[var(--secondary)]">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden glass px-6 py-6 flex flex-col gap-4 text-sm uppercase tracking-wide">
+      <a href="#about">About</a><a href="#menu">Menu</a><a href="#why">Why Us</a><a href="#gallery">Gallery</a><a
+        href="#contact">Contact</a>
+      <a href="#reserve"
+        class="bg-[var(--gold)] text-[var(--primary)] text-center px-6 py-2.5 rounded-full font-semibold">Reserve
+        Table</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[var(--primary)]">
+    <div class="absolute inset-0 opacity-40"
+      style="background:radial-gradient(circle at 20% 20%, rgba(212,175,55,.15), transparent 55%), radial-gradient(circle at 80% 70%, rgba(139,94,60,.25), transparent 55%);">
+    </div>
+    <div class="absolute inset-0"
+      style="background-image:linear-gradient(rgba(17,24,39,.75),rgba(17,24,39,.9)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1600&auto=format&fit=crop'); background-size:cover; background-position:center;">
+    </div>
+    <div class="relative z-10 text-center px-6 max-w-3xl">
+      <p class="uppercase tracking-[0.3em] text-[var(--gold)] text-xs mb-5 reveal show">Nkumba, Uganda</p>
+      <h1 class="serif text-5xl md:text-7xl leading-tight mb-6 reveal show">Jambo. <span
+          class="italic text-[var(--gold)]">Welcome home.</span></h1>
+      <p class="text-[var(--secondary)]/80 text-lg mb-10 reveal show">Fresh Lake Victoria tilapia, chicken biryani, and
+        great coffee — served with the kind of warmth that makes Nkumba feel like home.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center reveal show">
+        <a href="#reserve"
+          class="btn-ripple bg-[var(--gold)] text-[var(--primary)] px-8 py-3.5 rounded-full font-semibold tracking-wide hover:bg-white transition-colors">Reserve
+          a Table</a>
+        <a href="#menu"
+          class="btn-ripple border border-[var(--secondary)]/30 px-8 py-3.5 rounded-full font-semibold tracking-wide hover:border-[var(--gold)] hover:text-[var(--gold)] transition-colors">View
+          Menu</a>
+      </div>
+    </div>
+    <a href="#about" aria-label="Scroll down"
+      class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce text-[var(--gold)]">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M12 5v14M6 13l6 6 6-6" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-28 px-6 lg:px-10 bg-[var(--primary)]">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+      <div class="reveal">
+        <div class="rounded-3xl overflow-hidden zoom-wrap shadow-2xl">
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?q=80&w=1200&auto=format&fit=crop"
+            alt="Cozy cafe interior with warm lighting" class="zoom-img w-full h-[420px] object-cover">
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="uppercase tracking-[0.3em] text-[var(--gold)] text-xs mb-4">Our Story</p>
+        <h2 class="serif text-4xl mb-6">A Nkumba favorite, one plate at a time</h2>
+        <p class="text-[var(--secondary)]/75 leading-relaxed mb-6">Cafe Jambo started as a small neighborhood spot in
+          Nkumba and grew into a place where students, families, and travellers passing through stop for a proper meal.
+          We keep the menu honest — fresh fish, generous biryani, and coffee worth slowing down for.</p>
+        <div class="grid grid-cols-3 gap-6 pt-4 border-t border-[var(--secondary)]/10">
+          <div>
+            <p class="serif text-3xl text-[var(--gold)] counter" data-target="6">0</p>
+            <p class="text-xs uppercase tracking-wide text-[var(--secondary)]/60 mt-1">Signature dishes</p>
+          </div>
+          <div>
+            <p class="serif text-3xl text-[var(--gold)] counter" data-target="7">0</p>
+            <p class="text-xs uppercase tracking-wide text-[var(--secondary)]/60 mt-1">Days a week open</p>
+          </div>
+          <div>
+            <p class="serif text-3xl text-[var(--gold)] counter" data-target="100">0</p>
+            <p class="text-xs uppercase tracking-wide text-[var(--secondary)]/60 mt-1">% fresh, daily</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="py-28 px-6 lg:px-10 bg-[var(--secondary)] text-[var(--primary)]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <p class="uppercase tracking-[0.3em] text-[var(--brown)] text-xs mb-4">Featured Menu</p>
+        <h2 class="serif text-4xl md:text-5xl">What we're known for</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card template x6 -->
+        <div class="reveal card-lift bg-white rounded-3xl overflow-hidden shadow-lg">
+          <div class="zoom-wrap overflow-hidden h-52"><img class="zoom-img w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop"
+              alt="Whole grilled tilapia fish"></div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="serif text-xl">Whole Tilapia Fish</h3><span class="text-[var(--brown)] font-semibold">25,000
+                UGX</span>
+            </div>
+            <p class="text-sm text-[var(--primary)]/60 mb-4">Fresh from Lake Victoria, grilled whole and seasoned
+              simply.</p>
+            <a href="tel:+256752072346" class="text-sm font-semibold text-[var(--brown)] hover:text-[var(--gold)]">Order
+              by call →</a>
+          </div>
+        </div>
+        <div class="reveal card-lift bg-white rounded-3xl overflow-hidden shadow-lg">
+          <div class="zoom-wrap overflow-hidden h-52"><img class="zoom-img w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?q=80&w=800&auto=format&fit=crop"
+              alt="Chicken biryani"></div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="serif text-xl">Chicken Biryani</h3><span class="text-[var(--brown)] font-semibold">18,000
+                UGX</span>
+            </div>
+            <p class="text-sm text-[var(--primary)]/60 mb-4">Fragrant spiced rice, slow-cooked chicken, served
+              generously.</p>
+            <a href="tel:+256752072346" class="text-sm font-semibold text-[var(--brown)] hover:text-[var(--gold)]">Order
+              by call →</a>
+          </div>
+        </div>
+        <div class="reveal card-lift bg-white rounded-3xl overflow-hidden shadow-lg">
+          <div class="zoom-wrap overflow-hidden h-52"><img class="zoom-img w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=800&auto=format&fit=crop"
+              alt="Chips - Irish potatoes"></div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="serif text-xl">Chips (Irish)</h3><span class="text-[var(--brown)] font-semibold">8,000
+                UGX</span>
+            </div>
+            <p class="text-sm text-[var(--primary)]/60 mb-4">Golden, crisp-edged Irish potato chips, cut fresh daily.
+            </p>
+            <a href="tel:+256752072346" class="text-sm font-semibold text-[var(--brown)] hover:text-[var(--gold)]">Order
+              by call →</a>
+          </div>
+        </div>
+        <div class="reveal card-lift bg-white rounded-3xl overflow-hidden shadow-lg">
+          <div class="zoom-wrap overflow-hidden h-52"><img class="zoom-img w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1580217593608-61931cefc821?q=80&w=800&auto=format&fit=crop"
+              alt="Chips and fish plate"></div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="serif text-xl">Chips & Fish</h3><span class="text-[var(--brown)] font-semibold">22,000
+                UGX</span>
+            </div>
+            <p class="text-sm text-[var(--primary)]/60 mb-4">Our classic combo — crisp chips paired with fried fish
+              fillet.</p>
+            <a href="tel:+256752072346" class="text-sm font-semibold text-[var(--brown)] hover:text-[var(--gold)]">Order
+              by call →</a>
+          </div>
+        </div>
+        <div class="reveal card-lift bg-white rounded-3xl overflow-hidden shadow-lg">
+          <div class="zoom-wrap overflow-hidden h-52"><img class="zoom-img w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop"
+              alt="Chips and beef plate"></div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="serif text-xl">Chips & Beef</h3><span class="text-[var(--brown)] font-semibold">20,000
+                UGX</span>
+            </div>
+            <p class="text-sm text-[var(--primary)]/60 mb-4">Tender beef stew over golden chips. A Cafe Jambo favorite.
+            </p>
+            <a href="tel:+256752072346" class="text-sm font-semibold text-[var(--brown)] hover:text-[var(--gold)]">Order
+              by call →</a>
+          </div>
+        </div>
+        <div class="reveal card-lift bg-white rounded-3xl overflow-hidden shadow-lg">
+          <div class="zoom-wrap overflow-hidden h-52"><img class="zoom-img w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=800&auto=format&fit=crop"
+              alt="Chocolate ice cream"></div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="serif text-xl">Chocolate Ice Cream</h3><span class="text-[var(--brown)] font-semibold">6,000
+                UGX</span>
+            </div>
+            <p class="text-sm text-[var(--primary)]/60 mb-4">Rich, creamy, and the perfect way to close out a meal.</p>
+            <a href="tel:+256752072346" class="text-sm font-semibold text-[var(--brown)] hover:text-[var(--gold)]">Order
+              by call →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why" class="py-28 px-6 lg:px-10 bg-[var(--primary)]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <p class="uppercase tracking-[0.3em] text-[var(--gold)] text-xs mb-4">Why Choose Us</p>
+        <h2 class="serif text-4xl md:text-5xl">More than a meal</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- icon cards -->
+        <div class="reveal card-lift glass rounded-2xl p-7 text-center">
+          <svg class="mx-auto mb-4 text-[var(--gold)]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6">
+            <path d="M4 8h13a3 3 0 010 6h-1" />
+            <path d="M4 8v6a4 4 0 004 4h4a4 4 0 004-4V8" />
+            <path d="M8 2v2M12 2v2M16 2v2" />
+          </svg>
+          <p class="font-semibold mb-1">Great Coffee</p>
+          <p class="text-sm text-[var(--secondary)]/60">Brewed fresh, all day.</p>
+        </div>
+        <div class="reveal card-lift glass rounded-2xl p-7 text-center">
+          <svg class="mx-auto mb-4 text-[var(--gold)]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6">
+            <path d="M3 8h18M6 8v9a2 2 0 002 2h8a2 2 0 002-2V8M9 8V6a3 3 0 016 0v2" />
+          </svg>
+          <p class="font-semibold mb-1">Fresh Juices</p>
+          <p class="text-sm text-[var(--secondary)]/60">Local fruit, squeezed daily.</p>
+        </div>
+        <div class="reveal card-lift glass rounded-2xl p-7 text-center">
+          <svg class="mx-auto mb-4 text-[var(--gold)]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 7v5l3 3" />
+          </svg>
+          <p class="font-semibold mb-1">Great Desserts</p>
+          <p class="text-sm text-[var(--secondary)]/60">Ice cream and sweet bites.</p>
+        </div>
+        <div class="reveal card-lift glass rounded-2xl p-7 text-center">
+          <svg class="mx-auto mb-4 text-[var(--gold)]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6">
+            <path d="M12 3l2.5 5 5.5.8-4 4 1 5.4L12 15.9 6.9 18.2l1-5.4-4-4 5.5-.8L12 3z" />
+          </svg>
+          <p class="font-semibold mb-1">Tea Selection</p>
+          <p class="text-sm text-[var(--secondary)]/60">Spiced, black, or herbal.</p>
+        </div>
+        <div class="reveal card-lift glass rounded-2xl p-7 text-center">
+          <svg class="mx-auto mb-4 text-[var(--gold)]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6">
+            <path d="M12 2l7 4v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-4z" />
+          </svg>
+          <p class="font-semibold mb-1">Halal Options</p>
+          <p class="text-sm text-[var(--secondary)]/60">Ask your server what's halal.</p>
+        </div>
+        <div class="reveal card-lift glass rounded-2xl p-7 text-center">
+          <svg class="mx-auto mb-4 text-[var(--gold)]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6">
+            <path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z" />
+          </svg>
+          <p class="font-semibold mb-1">Vegan Options</p>
+          <p class="text-sm text-[var(--secondary)]/60">Plant-based dishes on request.</p>
+        </div>
+        <div class="reveal card-lift glass rounded-2xl p-7 text-center">
+          <svg class="mx-auto mb-4 text-[var(--gold)]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6">
+            <path d="M3 12h18M3 6h18M3 18h18" />
+          </svg>
+          <p class="font-semibold mb-1">Fresh Ingredients</p>
+          <p class="text-sm text-[var(--secondary)]/60">Sourced locally, daily.</p>
+        </div>
+        <div class="reveal card-lift glass rounded-2xl p-7 text-center">
+          <svg class="mx-auto mb-4 text-[var(--gold)]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6">
+            <path d="M5 21V8l7-5 7 5v13M9 21v-6h6v6" />
+          </svg>
+          <p class="font-semibold mb-1">Free WiFi</p>
+          <p class="text-sm text-[var(--secondary)]/60">Work or relax, stay connected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-24 px-6 lg:px-10 bg-[var(--secondary)] text-[var(--primary)]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <p class="uppercase tracking-[0.3em] text-[var(--brown)] text-xs mb-4">Services</p>
+        <h2 class="serif text-4xl">However you'd like to eat</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+        <div class="reveal card-lift bg-white rounded-2xl p-6 text-center shadow">
+          <p class="font-semibold">Dine In</p>
+        </div>
+        <div class="reveal card-lift bg-white rounded-2xl p-6 text-center shadow">
+          <p class="font-semibold">Outdoor Seating</p>
+        </div>
+        <div class="reveal card-lift bg-white rounded-2xl p-6 text-center shadow">
+          <p class="font-semibold">Takeaway</p>
+        </div>
+        <div class="reveal card-lift bg-white rounded-2xl p-6 text-center shadow">
+          <p class="font-semibold">Delivery</p>
+        </div>
+        <div class="reveal card-lift bg-white rounded-2xl p-6 text-center shadow">
+          <p class="font-semibold">Catering</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DINING OPTIONS -->
+  <section class="py-24 px-6 lg:px-10 bg-[var(--primary)]">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <p class="uppercase tracking-[0.3em] text-[var(--gold)] text-xs mb-4">Dining Options</p>
+        <h2 class="serif text-4xl">All day, every day</h2>
+      </div>
+      <div class="relative pl-8 border-l border-[var(--secondary)]/15 space-y-10">
+        <div class="reveal relative">
+          <span class="absolute -left-[38px] top-1 w-3 h-3 rounded-full bg-[var(--gold)]"></span>
+          <p class="serif text-xl mb-1">Breakfast</p>
+          <p class="text-sm text-[var(--secondary)]/60">Start with tea, coffee, and something warm.</p>
+        </div>
+        <div class="reveal relative">
+          <span class="absolute -left-[38px] top-1 w-3 h-3 rounded-full bg-[var(--gold)]"></span>
+          <p class="serif text-xl mb-1">Lunch</p>
+          <p class="text-sm text-[var(--secondary)]/60">Biryani, chips, and the day's fresh fish.</p>
+        </div>
+        <div class="reveal relative">
+          <span class="absolute -left-[38px] top-1 w-3 h-3 rounded-full bg-[var(--gold)]"></span>
+          <p class="serif text-xl mb-1">Dinner</p>
+          <p class="text-sm text-[var(--secondary)]/60">Slow down with the full menu.</p>
+        </div>
+        <div class="reveal relative">
+          <span class="absolute -left-[38px] top-1 w-3 h-3 rounded-full bg-[var(--gold)]"></span>
+          <p class="serif text-xl mb-1">Dessert</p>
+          <p class="text-sm text-[var(--secondary)]/60">Chocolate ice cream, always a good idea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER EXPERIENCE -->
+  <section class="py-24 px-6 lg:px-10 bg-[var(--secondary)] text-[var(--primary)]">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+      <div class="reveal">
+        <p class="uppercase tracking-[0.3em] text-[var(--brown)] text-xs mb-4">The Atmosphere</p>
+        <h2 class="serif text-4xl mb-6">Cozy, unhurried, welcoming</h2>
+        <ul class="space-y-3 text-[var(--primary)]/75">
+          <li class="flex gap-3"><span class="text-[var(--brown)]">✓</span> Cozy seating, indoors and out</li>
+          <li class="flex gap-3"><span class="text-[var(--brown)]">✓</span> Family friendly, groups welcome</li>
+          <li class="flex gap-3"><span class="text-[var(--brown)]">✓</span> A quiet spot to work or catch up</li>
+          <li class="flex gap-3"><span class="text-[var(--brown)]">✓</span> Travellers and tourists always welcome</li>
+        </ul>
+      </div>
+      <div class="reveal rounded-3xl overflow-hidden zoom-wrap shadow-xl">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1200&auto=format&fit=crop"
+          alt="Guests enjoying a meal together" class="zoom-img w-full h-[380px] object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESSIBILITY -->
+  <section class="py-20 px-6 lg:px-10 bg-[var(--primary)]">
+    <div class="max-w-5xl mx-auto text-center">
+      <p class="uppercase tracking-[0.3em] text-[var(--gold)] text-xs mb-4 reveal">Getting Here Comfortably</p>
+      <h2 class="serif text-3xl mb-12 reveal">Amenities</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
+        <div class="reveal glass rounded-2xl p-6">Step-free entrance</div>
+        <div class="reveal glass rounded-2xl p-6">Ground-floor seating</div>
+        <div class="reveal glass rounded-2xl p-6">Nearby parking</div>
+        <div class="reveal glass rounded-2xl p-6">Street parking available</div>
+      </div>
+      <p class="text-xs text-[var(--secondary)]/40 mt-6 reveal">Call ahead if you have specific accessibility needs —
+        we're happy to help.</p>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reserve" class="py-28 px-6 lg:px-10 bg-[var(--secondary)] text-[var(--primary)]">
+    <div class="max-w-2xl mx-auto text-center mb-12 reveal">
+      <p class="uppercase tracking-[0.3em] text-[var(--brown)] text-xs mb-4">Reservations</p>
+      <h2 class="serif text-4xl mb-3">Book your table</h2>
+      <p class="text-[var(--primary)]/60">We'll confirm by phone — Cafe Jambo doesn't take live bookings online yet.</p>
+    </div>
+    <form id="reserveForm"
+      class="reveal max-w-2xl mx-auto bg-white rounded-3xl shadow-xl p-8 grid sm:grid-cols-2 gap-5">
+      <div class="sm:col-span-1">
+        <label class="text-xs uppercase tracking-wide text-[var(--primary)]/50">Name</label>
+        <input required type="text"
+          class="w-full mt-1 border border-black/10 rounded-xl px-4 py-3 focus:border-[var(--gold)]"
+          placeholder="Your name">
+      </div>
+      <div class="sm:col-span-1">
+        <label class="text-xs uppercase tracking-wide text-[var(--primary)]/50">Phone</label>
+        <input required type="tel"
+          class="w-full mt-1 border border-black/10 rounded-xl px-4 py-3 focus:border-[var(--gold)]"
+          placeholder="07XX XXX XXX">
+      </div>
+      <div class="sm:col-span-1">
+        <label class="text-xs uppercase tracking-wide text-[var(--primary)]/50">Guests</label>
+        <input required type="number" min="1"
+          class="w-full mt-1 border border-black/10 rounded-xl px-4 py-3 focus:border-[var(--gold)]" placeholder="2">
+      </div>
+      <div class="sm:col-span-1">
+        <label class="text-xs uppercase tracking-wide text-[var(--primary)]/50">Date</label>
+        <input required type="date"
+          class="w-full mt-1 border border-black/10 rounded-xl px-4 py-3 focus:border-[var(--gold)]">
+      </div>
+      <div class="sm:col-span-1">
+        <label class="text-xs uppercase tracking-wide text-[var(--primary)]/50">Time</label>
+        <input required type="time"
+          class="w-full mt-1 border border-black/10 rounded-xl px-4 py-3 focus:border-[var(--gold)]">
+      </div>
+      <div class="sm:col-span-1">
+        <label class="text-xs uppercase tracking-wide text-[var(--primary)]/50">Special Requests</label>
+        <input type="text" class="w-full mt-1 border border-black/10 rounded-xl px-4 py-3 focus:border-[var(--gold)]"
+          placeholder="Optional">
+      </div>
+      <button type="submit"
+        class="btn-ripple sm:col-span-2 bg-[var(--primary)] text-white rounded-xl py-3.5 font-semibold hover:bg-[var(--brown)] transition-colors">Request
+        Table via Call</button>
+      <p id="formNote" class="sm:col-span-2 text-xs text-center text-[var(--primary)]/50"></p>
+    </form>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-28 px-6 lg:px-10 bg-[var(--primary)]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <p class="uppercase tracking-[0.3em] text-[var(--gold)] text-xs mb-4">Testimonials</p>
+        <h2 class="serif text-4xl">What guests say</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="reveal card-lift glass rounded-2xl p-8">
+          <p class="text-[var(--gold)] mb-4">★★★★★</p>
+          <p class="text-[var(--secondary)]/75 mb-6">"The tilapia is always fresh and the staff remember your order.
+            Feels like a second home in Nkumba."</p>
+          <p class="font-semibold text-sm">— Grace N.</p>
+        </div>
+        <div class="reveal card-lift glass rounded-2xl p-8">
+          <p class="text-[var(--gold)] mb-4">★★★★★</p>
+          <p class="text-[var(--secondary)]/75 mb-6">"Great coffee, quiet corner tables, easy to work from here for a
+            few hours."</p>
+          <p class="font-semibold text-sm">— Brian K.</p>
+        </div>
+        <div class="reveal card-lift glass rounded-2xl p-8">
+          <p class="text-[var(--gold)] mb-4">★★★★★</p>
+          <p class="text-[var(--secondary)]/75 mb-6">"Biryani is generous and the chips & beef never disappoints. Our
+            go-to Sunday spot."</p>
+          <p class="font-semibold text-sm">— Aisha M.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-28 px-6 lg:px-10 bg-[var(--secondary)] text-[var(--primary)]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <p class="uppercase tracking-[0.3em] text-[var(--brown)] text-xs mb-4">Gallery</p>
+        <h2 class="serif text-4xl">A taste of Cafe Jambo</h2>
+      </div>
+      <div class="columns-2 md:columns-3 gap-4 space-y-4 [&_img]:rounded-2xl [&_img]:w-full">
+        <img class="lightbox-img cursor-zoom-in reveal"
+          src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop"
+          alt="Grilled fish plate">
+        <img class="lightbox-img cursor-zoom-in reveal"
+          src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?q=80&w=800&auto=format&fit=crop"
+          alt="Cafe interior">
+        <img class="lightbox-img cursor-zoom-in reveal"
+          src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=800&auto=format&fit=crop"
+          alt="Guests dining">
+        <img class="lightbox-img cursor-zoom-in reveal"
+          src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?q=80&w=800&auto=format&fit=crop"
+          alt="Biryani close up">
+        <img class="lightbox-img cursor-zoom-in reveal"
+          src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=800&auto=format&fit=crop"
+          alt="Chips plate">
+        <img class="lightbox-img cursor-zoom-in reveal"
+          src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=800&auto=format&fit=crop"
+          alt="Ice cream dessert">
+      </div>
+      <p class="text-xs text-center text-[var(--primary)]/40 mt-8">Illustrative photos — swap in real Cafe Jambo
+        photography when available.</p>
+    </div>
+  </section>
+  <div id="lightbox" class="hidden fixed inset-0 bg-black/90 z-[70] items-center justify-center p-6 cursor-zoom-out">
+    <img id="lightboxImg" src="" alt="" class="max-h-[85vh] max-w-full rounded-2xl">
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-28 px-6 lg:px-10 bg-[var(--primary)]">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+      <div class="reveal">
+        <p class="uppercase tracking-[0.3em] text-[var(--gold)] text-xs mb-4">Visit Us</p>
+        <h2 class="serif text-4xl mb-8">Find Cafe Jambo</h2>
+        <div class="space-y-6 text-[var(--secondary)]/80">
+          <div class="flex gap-4">
+            <svg class="text-[var(--gold)] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.6">
+              <path d="M12 21s-7-7.5-7-12a7 7 0 0114 0c0 4.5-7 12-7 12z" />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg>
+            <div>
+              <p class="font-semibold text-[var(--secondary)]">Location</p>
+              <p>Nkumba, Uganda</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <svg class="text-[var(--gold)] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.6">
+              <path
+                d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.9a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.8 2.2z" />
+            </svg>
+            <div>
+              <p class="font-semibold text-[var(--secondary)]">Phone</p><a href="tel:+256752072346"
+                class="hover:text-[var(--gold)]">0752 072 346</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <svg class="text-[var(--gold)] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3.5 2" />
+            </svg>
+            <div>
+              <p class="font-semibold text-[var(--secondary)]">Hours</p>
+              <p class="text-sm">Daily — confirm exact hours by phone</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <svg class="text-[var(--gold)] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.6">
+              <rect x="1" y="6" width="18" height="12" rx="2" />
+              <path d="M19 10h2a2 2 0 012 2v3a1 1 0 01-1 1h-3" />
+              <circle cx="6" cy="18" r="1.6" />
+              <circle cx="16.5" cy="18" r="1.6" />
+            </svg>
+            <div>
+              <p class="font-semibold text-[var(--secondary)]">Parking</p>
+              <p class="text-sm">Free on-site parking, plus street parking nearby</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal rounded-3xl overflow-hidden shadow-2xl min-h-[380px]">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.9062603251646!2d32.504443493745335!3d0.09769303877049729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d85727c02041f%3A0xc319621d8934f2ff!2sCafe%20Jambo!5e0!3m2!1sen!2sug!4v1783592640505!5m2!1sen!2sug"
+          width="100%" height="100%" style="border:0; min-height:380px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-[var(--secondary)]/10 py-14 px-6 lg:px-10 bg-[var(--primary)]">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+      <div>
+        <p class="serif text-2xl text-[var(--gold)] mb-3">Cafe Jambo</p>
+        <p class="text-sm text-[var(--secondary)]/60">Nkumba, Uganda<br>0752 072 346</p>
+      </div>
+      <div>
+        <p class="font-semibold mb-3 text-sm uppercase tracking-wide">Navigate</p>
+        <ul class="space-y-2 text-sm text-[var(--secondary)]/60">
+          <li><a href="#about" class="hover:text-[var(--gold)]">About</a></li>
+          <li><a href="#menu" class="hover:text-[var(--gold)]">Menu</a></li>
+          <li><a href="#reserve" class="hover:text-[var(--gold)]">Reserve</a></li>
+          <li><a href="#contact" class="hover:text-[var(--gold)]">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-3 text-sm uppercase tracking-wide">Follow</p>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Facebook"
+            class="w-9 h-9 rounded-full border border-[var(--secondary)]/20 flex items-center justify-center hover:border-[var(--gold)] hover:text-[var(--gold)]">f</a>
+          <a href="#" aria-label="Instagram"
+            class="w-9 h-9 rounded-full border border-[var(--secondary)]/20 flex items-center justify-center hover:border-[var(--gold)] hover:text-[var(--gold)]">ig</a>
+          <a href="https://wa.me/256752072346" aria-label="WhatsApp"
+            class="w-9 h-9 rounded-full border border-[var(--secondary)]/20 flex items-center justify-center hover:border-[var(--gold)] hover:text-[var(--gold)]">wa</a>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold mb-3 text-sm uppercase tracking-wide">Newsletter</p>
+        <form class="flex gap-2" onsubmit="event.preventDefault(); this.reset(); this.querySelector('p')?.remove();">
+          <input type="email" required placeholder="Email"
+            class="w-full bg-transparent border border-[var(--secondary)]/20 rounded-full px-4 py-2 text-sm focus:border-[var(--gold)]">
+          <button class="bg-[var(--gold)] text-[var(--primary)] rounded-full px-4 text-sm font-semibold">Join</button>
+        </form>
+      </div>
+    </div>
+    <p class="text-center text-xs text-[var(--secondary)]/30 mt-12">© <span id="year"></span> Cafe Jambo, Nkumba. All
+      rights reserved.</p>
+  </footer>
+
+  <a href="#home" id="toTop" aria-label="Back to top"
+    class="hidden fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-[var(--gold)] text-[var(--primary)] flex items-center justify-center shadow-lg">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Nav background on scroll + progress bar
+    const navbar = document.getElementById('navbar');
+    const progress = document.getElementById('progress');
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      navbar.classList.toggle('glass', scrolled > 40);
+      navbar.classList.toggle('shadow-lg', scrolled > 40);
+      const h = document.documentElement;
+      const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+      progress.style.width = pct + '%';
+      toTop.classList.toggle('hidden', scrolled < 500);
+    });
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+
+    // Animated counters
+    const counters = document.querySelectorAll('.counter');
+    const cIo = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = +el.dataset.target;
+        let cur = 0;
+        const step = Math.max(1, Math.ceil(target / 40));
+        const t = setInterval(() => {
+          cur += step;
+          if (cur >= target) { cur = target; clearInterval(t); }
+          el.textContent = cur;
+        }, 30);
+        cIo.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => cIo.observe(c));
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    document.querySelectorAll('.lightbox-img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+      });
+    });
+    lightbox.addEventListener('click', () => { lightbox.classList.add('hidden'); lightbox.classList.remove('flex'); });
+
+    // Reservation form (no backend — routes to a phone call)
+    const reserveForm = document.getElementById('reserveForm');
+    const formNote = document.getElementById('formNote');
+    reserveForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formNote.textContent = "Details ready — tap to call 0752 072 346 to confirm your table.";
+      window.location.href = "tel:+256752072346";
+    });
+  </script>
+</body>
+
+</html>
